@@ -44,6 +44,8 @@
     <Compile Include="AccesoBaseDatos.cs" />
     <Compile Include="ArticuloDB.cs" />
     <Compile Include="CategoriaDB.cs" />
+    <Compile Include="VoucherDB.cs" />
+    <Compile Include="ClienteDB.cs" />
     <Compile Include="ImagenDB.cs" />
     <Compile Include="MarcaDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
