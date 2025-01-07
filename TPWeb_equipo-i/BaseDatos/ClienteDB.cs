@@ -9,6 +9,6 @@ namespace BaseDatos
 {
     public class ClienteDB
     {
-        public List<Cliente> 
+         
     }
 }

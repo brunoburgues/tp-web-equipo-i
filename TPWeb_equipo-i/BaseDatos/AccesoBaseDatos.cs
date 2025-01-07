@@ -48,6 +48,12 @@ namespace BaseDatos
         {
             comando.Parameters.AddWithValue(nombre, valor);
         }
+        public void setearprocedimiento(string sp)
+        {
+        comando.CommandType= System.Data.CommandType.Text;
+            comando.CommandText = sp;
+        }
+           
         public void ejecutarAccion()
         {
             comando.Connection = conexion;
@@ -71,6 +77,11 @@ namespace BaseDatos
         public void setParametro(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);
+        }
+
+        public object ListarArticulosSP()
+        {
+            throw new NotImplementedException();
         }
     }
 }
