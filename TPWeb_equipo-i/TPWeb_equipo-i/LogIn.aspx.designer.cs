@@ -24,13 +24,13 @@ namespace TPWeb_equipo_i
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// txtContraseña control.
+        /// lblAlertaEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContraseña;
+        protected global::System.Web.UI.WebControls.Label lblAlertaEmail;
 
         /// <summary>
         /// btnIniciarSesion control.
@@ -40,14 +40,5 @@ namespace TPWeb_equipo_i
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnIniciarSesion;
-
-        /// <summary>
-        /// lblPrueba control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrueba;
     }
 }
