@@ -66,6 +66,10 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="ListaArticulos.aspx" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="Premios.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="Vouchers.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,17 +87,45 @@
     <Compile Include="ListaArticulos.aspx.designer.cs">
       <DependentUpon>ListaArticulos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MastePage.Master.cs">
-      <DependentUpon>MastePage.Master</DependentUpon>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MastePage.Master.designer.cs">
-      <DependentUpon>MastePage.Master</DependentUpon>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Premios.aspx.cs">
+      <DependentUpon>Premios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Premios.aspx.designer.cs">
+      <DependentUpon>Premios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vouchers.aspx.cs">
+      <DependentUpon>Vouchers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vouchers.aspx.designer.cs">
+      <DependentUpon>Vouchers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MastePage.Master" />
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

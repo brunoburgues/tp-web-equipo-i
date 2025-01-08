@@ -13,8 +13,8 @@ namespace TPWeb_equipo_i
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AccesoBaseDatos accesoBaseDatos = new AccesoBaseDatos();
-            dgvArticulos.DataSource = accesoBaseDatos.ListarArticulosSP();
+            ArticuloDB articuloDB = new ArticuloDB();
+            dgvArticulos.DataSource = articuloDB.ListarArticulosSP();
             dgvArticulos.DataBind();
         }
     }

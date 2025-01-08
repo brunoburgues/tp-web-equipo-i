@@ -11,25 +11,25 @@ namespace TPWeb_equipo_i
 {
 
 
-    public partial class Default
+    public partial class Vouchers
     {
 
         /// <summary>
-        /// txtCodigo control.
+        /// dgvVouchers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
+        protected global::System.Web.UI.WebControls.GridView dgvVouchers;
 
         /// <summary>
-        /// btnIngresarCodigo control.
+        /// btnIngresarVoucher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIngresarCodigo;
+        protected global::System.Web.UI.WebControls.Button btnIngresarVoucher;
     }
 }

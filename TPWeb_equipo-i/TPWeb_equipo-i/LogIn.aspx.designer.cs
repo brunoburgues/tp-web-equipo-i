@@ -11,25 +11,34 @@ namespace TPWeb_equipo_i
 {
 
 
-    public partial class Default
+    public partial class LogIn
     {
 
         /// <summary>
-        /// txtCodigo control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// btnIngresarCodigo control.
+        /// txtContraseña control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIngresarCodigo;
+        protected global::System.Web.UI.WebControls.TextBox txtContraseña;
+
+        /// <summary>
+        /// btnIniciarSesion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnIniciarSesion;
     }
 }
