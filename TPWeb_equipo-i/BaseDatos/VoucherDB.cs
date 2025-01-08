@@ -43,6 +43,28 @@ namespace BaseDatos
                 db.CloseConexion();
             }
         }
-    }
+        public List<string> ListarCodigos()
+        {
+            List<string> codigos = new List<string>();
+            AccesoBaseDatos db = new AccesoBaseDatos();
+            try
+            {
+                db.SetConsulta("SELECT CodigoVoucher FROM Vouchers");
+                db.Lectura();
+                while (db.Reader.Read())
+                {
+                    codigos.Add((string)db.Reader["CodigoVoucher"]);
+                }
+                return codigos;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                db.CloseConexion(); 
+            }
+        }
     }
 }
