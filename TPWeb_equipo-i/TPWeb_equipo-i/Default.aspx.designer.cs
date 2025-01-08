@@ -24,6 +24,15 @@ namespace TPWeb_equipo_i
         protected global::System.Web.UI.WebControls.TextBox txtCodigo;
 
         /// <summary>
+        /// lblAlertaCodigo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAlertaCodigo;
+
+        /// <summary>
         /// btnIngresarCodigo control.
         /// </summary>
         /// <remarks>

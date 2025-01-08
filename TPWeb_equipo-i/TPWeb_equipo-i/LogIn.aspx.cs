@@ -11,7 +11,8 @@ namespace TPWeb_equipo_i
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string cod = Request.QueryString["vou"] != null ? Request.QueryString["vou"].ToString() : "No paso el código";
+            lblPrueba.Text = cod;
         }
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)

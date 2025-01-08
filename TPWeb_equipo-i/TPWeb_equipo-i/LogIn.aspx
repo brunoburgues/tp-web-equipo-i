@@ -14,12 +14,13 @@
               <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail"/>
             </div>
             <div class="mb-3">
-              <label for="txtContraseña" class="form-label">Contraseña</label>
+              <label for="txtContraseña" class="form-label">Documento</label>
               <asp:TextBox runat="server" CssClass="form-control" ID="txtContraseña" Type="password"/>
             </div>
             <p class="form-text">Si todavía no tienes una cuenta, puedes crearla <a href="SignIn.Aspx">aquí</a>.</p>
             <asp:Button Text="Ingresar" Cssclass="btn btn-secondary mb-3" ID="btnIniciarSesion" Onclick="btnIniciarSesion_Click" runat="server" />
-
+            //Prueba
+            <asp:Label runat="server" class="form-label" id="lblPrueba"/>
         </div>
         <div class="col-2"></div>
     </div>

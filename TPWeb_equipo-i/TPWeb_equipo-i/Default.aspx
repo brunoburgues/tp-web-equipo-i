@@ -11,8 +11,9 @@
         </div>
         <div class="col">
             <div class="mb-3">
-                <label for="txtCodigo" class="form-label">Código</label>
+                <label for="txtCodigo" class="form-label" id = "lblCodigo">Código</label>
                 <asp:TextBox runat="server" CssClass="form-control" ID="txtCodigo" />
+                <asp:Label Text="" runat="server" ID="lblAlertaCodigo"/>
             </div>
             <asp:Button Text="Ingresar" CssClass="btn btn-secondary mb-3" ID="btnIngresarCodigo" OnClick="btnIngresarCodigo_Click" runat="server" />
             <br/>
