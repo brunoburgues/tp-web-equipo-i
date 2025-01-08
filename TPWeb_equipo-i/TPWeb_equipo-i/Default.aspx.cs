@@ -49,9 +49,8 @@ namespace TPWeb_equipo_i
                 }
                 else
                 {
-                    //Tomar datos del cliente si ya esta registrado o pedir los datos
-                    //VoucherDb : para ingresar un vaucher cargado
-                    Response.Redirect("LogIn.aspx?vou=" + codigo, false);
+                    
+                    Response.Redirect("Premios.aspx?vou=" + codigo, false);
                 }
             }
 
