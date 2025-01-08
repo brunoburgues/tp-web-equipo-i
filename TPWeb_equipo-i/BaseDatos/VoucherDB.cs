@@ -66,5 +66,30 @@ namespace BaseDatos
                 db.CloseConexion(); 
             }
         }
+        public List<string> ListarCodigosUsados()
+        {
+            List<string> listaCodigosUsados = new List<string>();
+            AccesoBaseDatos db = new AccesoBaseDatos();
+            try
+            {
+                db.SetConsulta("SELECT CodigoVoucher FROM Vouchers WHERE IdCliente IS NULL AND Nombre IS NULL AND FechaCanje IS NULL AND IdArticulo IS NULL");
+                db.Lectura();
+                while (db.Reader.Read())
+                {
+                    listaCodigosUsados.Add((string)db.Reader["CodigoVoucher"]);
+                }
+                return listaCodigosUsados;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                db.CloseConexion();
+            }
+        }
+
+
     }
 }
