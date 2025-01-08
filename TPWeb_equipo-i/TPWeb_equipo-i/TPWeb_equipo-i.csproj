@@ -65,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="ListaArticulos.aspx" />
+    <Content Include="home.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="Premios.aspx" />
     <Content Include="SignIn.aspx" />
@@ -80,12 +80,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ListaArticulos.aspx.cs">
-      <DependentUpon>ListaArticulos.aspx</DependentUpon>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ListaArticulos.aspx.designer.cs">
-      <DependentUpon>ListaArticulos.aspx</DependentUpon>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>

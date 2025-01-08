@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListaArticulos.aspx.cs" Inherits="TPWeb_equipo_i.ListaArticulos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="TPWeb_equipo_i.ListaArticulos" %>
 
 <!DOCTYPE html>
 
