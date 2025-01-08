@@ -23,7 +23,7 @@ namespace BaseDatos
                     Voucher auxVoucher = new Voucher();
 
                     auxVoucher.CodigoVoucher = (string)db.Reader["Codigo"];
-                    auxVoucher.IdCliente = (string)db.Reader["Cliente"];
+                    auxVoucher.IdCliente = (int)db.Reader["Cliente"];
                     auxVoucher.FechaCanje = (DateTime)db.Reader["FechaCanje"];
 
                     auxVoucher.Articulo = new Articulo();
@@ -89,7 +89,27 @@ namespace BaseDatos
                 db.CloseConexion();
             }
         }
-
+        public void Ingresar(Voucher voucher)
+        {
+            AccesoBaseDatos db = new AccesoBaseDatos();
+            try
+            {
+                db.SetConsulta("UPDATE Vouchers SET IdCliente = @IdCliente, FechaCanje = @FechaCanje, IdArticulo = @IdArticulo WHERE CodigoVoucher = @CodigoVoucher");
+                db.setearparametros("@IdCliente", voucher.IdCliente);
+                db.setearparametros("@FechaCanje", voucher.FechaCanje);
+                db.setearparametros("@IdArticulo", voucher.Articulo.Id);
+                db.setearparametros("@CodigoVoucher", voucher.CodigoVoucher);
+                db.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                db.CloseConexion();
+            }
+        }
 
     }
 }
