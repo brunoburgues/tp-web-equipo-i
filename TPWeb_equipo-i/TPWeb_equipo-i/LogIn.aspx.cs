@@ -18,7 +18,8 @@ namespace TPWeb_equipo_i
             //Tomar datos del cliente si ya esta registrado o pedir los datos
             //VoucherDb : para ingresar un vaucher cargado
             string cod = Request.QueryString["vou"] != null ? Request.QueryString["vou"].ToString() : "No paso el código";
-            //lblPrueba.Text = cod;
+            int idArt = Request.QueryString["id"] != null ? Convert.ToInt32(Request.QueryString["id"]) : 999;
+            lblPrueba.Text = "El voucher ingresado fue: " + cod + " Y el Id del Articulo seleccionado fue: " + idArt;
         }
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)
