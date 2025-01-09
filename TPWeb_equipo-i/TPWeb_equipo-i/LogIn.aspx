@@ -18,7 +18,7 @@
             </div>
             <p class="form-text">Si todavía no tienes una cuenta, puedes crearla <a href="SignIn.Aspx">aquí</a>.</p>
             <asp:Button Text="Ingresar" CssClass="btn btn-secondary mb-3" ID="btnIniciarSesion" OnClick="btnIniciarSesion_Click" runat="server" />
-            //Prueba
+            <asp:Label runat="server" class="form-label" ID="lblPrueba" />
         </div>
         <div class="col-2"></div>
     </div>

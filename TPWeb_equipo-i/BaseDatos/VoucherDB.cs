@@ -72,7 +72,7 @@ namespace BaseDatos
             AccesoBaseDatos db = new AccesoBaseDatos();
             try
             {
-                db.SetConsulta("SELECT CodigoVoucher FROM Vouchers WHERE IdCliente IS NULL AND Nombre IS NULL AND FechaCanje IS NULL AND IdArticulo IS NULL");
+                db.SetConsulta("SELECT CodigoVoucher FROM Vouchers WHERE IdCliente IS NOT NULL AND FechaCanje IS NOT NULL AND IdArticulo IS NOT NULL");
                 db.Lectura();
                 while (db.Reader.Read())
                 {

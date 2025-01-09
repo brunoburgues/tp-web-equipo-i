@@ -28,5 +28,16 @@ namespace TPWeb_equipo_i
             }
 
         }
+
+        protected void repRepetidor_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "IdArticulo")
+            {
+                int idArticulo = Convert.ToInt32(e.CommandArgument);
+                string cod = Request.QueryString["vou"].ToString();
+
+                Response.Redirect("LogIn.aspx?vou=" + cod + "&id=" + idArticulo, false);
+            }
+        }
     }
 }
