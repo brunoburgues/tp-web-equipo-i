@@ -15,6 +15,6 @@
         </Columns>
     </asp:GridView>
     <div class="col-12">
-        <asp:Button Text="Ingresar Voucher" CssClass="btn btn-success mb-3" ID="btnIngresarVoucher" OnClick="btnIngresarVoucher_Click" runat="server" />
+        <asp:Button Text="Ingresar Voucher" CssClass="btn btn-success mb-3" ID="btnIngresarVoucher" OnClick="btnIngresarVoucher_Click"commandName="CodigoVoucher"commandArgument='<%#Eval("CodigoVoucher") %>' runat="server" />
     </div>
 </asp:Content>

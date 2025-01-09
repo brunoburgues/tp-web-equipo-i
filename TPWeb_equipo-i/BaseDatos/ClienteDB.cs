@@ -42,5 +42,26 @@ namespace BaseDatos
             }
         }
 
+        public void agregar(Cliente nuevo)
+        {
+            AccesoBaseDatos datos = new AccesoBaseDatos();
+            try
+            {
+                datos.SetConsulta("Insert into Clientes values ('" + nuevo.Id + "', '" + nuevo.Documento + "', '" + nuevo.Nombre + "', " + nuevo.Apellido + ", " + nuevo.Email + ", " + nuevo.Direccion + ", " + nuevo.Ciudad + ", " + nuevo.CP + ")");
+                datos.Lectura();
+            }
+
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+
+                datos.CloseConexion();
+            }
+
+        }
     }
 }

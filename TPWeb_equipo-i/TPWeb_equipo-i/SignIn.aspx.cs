@@ -18,5 +18,10 @@ namespace TPWeb_equipo_i
         {
 
         }
+
+        protected void txtDNI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

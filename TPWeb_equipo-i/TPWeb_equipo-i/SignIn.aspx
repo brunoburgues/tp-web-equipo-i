@@ -5,6 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
     <h2>Registrate para participar y ganar premios increíbles.</h2>
+    <h3>¡No te pierdas la oportunidad de ganar!</h3>
+    <h3>Ingrese primero su DNI</h3>
     <br />
     <div class="row g-3">
         <div class="col-md-6">
@@ -13,7 +15,7 @@
         </div>
         <div class="col-md-6">
             <label for="txtDNI" class="form-label">Documento</label>
-            <asp:TextBox runat="server" CssClass="form-control" ID="txtDNI" />
+            <asp:TextBox runat="server" CssClass="form-control" ID="txtDNI" OnTextChanged="txtDNI_TextChanged" />
         </div>
         <div class="col-12">
             <label for="txtNombre" class="form-label">Nombre</label>

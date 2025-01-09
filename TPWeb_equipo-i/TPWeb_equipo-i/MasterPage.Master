@@ -23,12 +23,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="home.aspx">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="Default.aspx">Inicio</a>
                             <a class="nav-link" href="Vouchers.aspx">Vouchers</a>
                             <a class="nav-link" href="Premios.aspx">Premios</a>
                             <a class="nav-link" href="SignIn.aspx">Registrarse</a>
                             <a class="nav-link" href="LogIn.aspx">Iniciar Sesión</a>
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link disabled" aria-disabled="false">Disabled</a>
                         </div>
                     </div>
                 </div>
