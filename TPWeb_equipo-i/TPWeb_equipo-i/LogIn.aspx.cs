@@ -20,6 +20,7 @@ namespace TPWeb_equipo_i
             string cod = Request.QueryString["vou"] != null ? Request.QueryString["vou"].ToString() : "No paso el código";
             int idArt = Request.QueryString["id"] != null ? Convert.ToInt32(Request.QueryString["id"]) : 999;
             lblPrueba.Text = "El voucher ingresado fue: " + cod + " Y el Id del Articulo seleccionado fue: " + idArt;
+
         }
 
         protected void btnIniciarSesion_Click(object sender, EventArgs e)

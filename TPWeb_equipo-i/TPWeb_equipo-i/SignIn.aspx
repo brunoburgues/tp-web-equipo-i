@@ -6,7 +6,7 @@
     <br />
     <h2>Registrate para participar y ganar premios increíbles.</h2>
     <h3>¡No te pierdas la oportunidad de ganar!</h3>
-    <h3>Ingrese primero su DNI</h3>
+    <h3 style="color: red;">Ingrese primero su DNI</h3>
     <br />
     <div class="row g-3">
         <div class="col-md-6">
@@ -38,7 +38,7 @@
             <asp:TextBox runat="server" CssClass="form-control" ID="txtCp" />
         </div>
         <div class="col-12">
-            <asp:Button Text="Registrarme" CssClass="btn btn-success mb-3" ID="btnRegistrar" OnClick="btnRegistrar_Click" runat="server" />
+            <asp:Button Text="Participar!" CssClass="btn btn-success mb-3" ID="btnRegistrar" OnClick="btnRegistrar_Click" runat="server" />
         </div>
         <p class="form-text text-center">Si ya tienes una cuenta ingresa <a href="LogIn.Aspx">aquí</a>.</p>
     </div>

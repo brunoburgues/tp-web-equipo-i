@@ -19,9 +19,8 @@ namespace TPWeb_equipo_i
         protected void btnIngresarVoucher_Click(object sender, EventArgs e)
         {
             string codigo = ((Button)sender).CommandArgument;
-            if (!)
-            {
-            }
+           
+            
         }
     }
 }

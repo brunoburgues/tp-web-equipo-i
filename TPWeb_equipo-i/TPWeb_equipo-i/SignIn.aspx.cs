@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BaseDatos;
+using Dominio;
 
 namespace TPWeb_equipo_i
 {
@@ -11,7 +13,9 @@ namespace TPWeb_equipo_i
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+                txtDNI.Text= "Empiece por AQUI";
+            
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
@@ -21,6 +25,8 @@ namespace TPWeb_equipo_i
 
         protected void txtDNI_TextChanged(object sender, EventArgs e)
         {
+            List<Cliente> clientes = clienteDB.ListarClientes();
+            Cliente cliente = clientes.Find(c => c.Email.ToLower() == email);
 
         }
     }
