@@ -17,7 +17,15 @@ namespace TPWeb_equipo_i
         {
             if(!IsPostBack)
                 txtDNI.Text= "Empiece por AQUI";
-            
+
+            string codigo = Request.QueryString["vou"].ToString();
+            int idArt = Convert.ToInt32(Request.QueryString["id"]);
+            linkLogIn.NavigateUrl = "LogIn.aspx?vou=" + codigo + "&id=" + idArt;
+
+            //Codigo para probar si se pasaron los datos correctamente
+            string cod = Request.QueryString["vou"] != null ? Request.QueryString["vou"].ToString() : "No paso el código";
+            int idArticulo = Request.QueryString["id"] != null ? Convert.ToInt32(Request.QueryString["id"]) : 999;
+            lblPrueba.Text = "El voucher ingresado fue: " + cod + " Y el Id del Articulo seleccionado fue: " + idArticulo;
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)

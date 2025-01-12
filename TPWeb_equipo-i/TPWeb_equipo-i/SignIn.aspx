@@ -9,13 +9,15 @@
     <h3 style="color: red;">Ingrese primero su DNI</h3>
     <br />
     <div class="row g-3">
-        <div class="col-md-6">
-            <label for="txtEmail" class="form-label">Correo Electrónico</label>
-            <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail" />
-        </div>
+        <asp:Label runat="server" class="form-label" ID="lblPrueba" />
+
         <div class="col-md-6">
             <label for="txtDNI" class="form-label">Documento</label>
             <asp:TextBox runat="server" CssClass="form-control" ID="txtDNI" OnTextChanged="txtDNI_TextChanged" />
+        </div>
+        <div class="col-md-6">
+            <label for="txtEmail" class="form-label">Correo Electrónico</label>
+            <asp:TextBox runat="server" CssClass="form-control" ID="txtEmail" />
         </div>
         <div class="col-12">
             <label for="txtNombre" class="form-label">Nombre</label>
@@ -40,7 +42,7 @@
         <div class="col-12">
             <asp:Button Text="Participar!" CssClass="btn btn-success mb-3" ID="btnRegistrar" OnClick="btnRegistrar_Click" runat="server" />
         </div>
-        <p class="form-text text-center">Si ya tienes una cuenta ingresa <a href="LogIn.Aspx">aquí</a>.</p>
+        <p class="form-text text-center">Si ya tienes una cuenta ingresa <asp:HyperLink runat="server" Text="aquí" ID="linkLogIn"/>.</p>
     </div>
     <br />
 </asp:Content>

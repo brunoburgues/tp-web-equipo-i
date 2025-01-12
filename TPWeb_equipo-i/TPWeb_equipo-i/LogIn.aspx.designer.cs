@@ -15,22 +15,31 @@ namespace TPWeb_equipo_i
     {
 
         /// <summary>
-        /// txtEmail control.
+        /// txtDni control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtDni;
 
         /// <summary>
-        /// lblAlertaEmail control.
+        /// lblAlertaDni control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAlertaEmail;
+        protected global::System.Web.UI.WebControls.Label lblAlertaDni;
+
+        /// <summary>
+        /// linkSignIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkSignIn;
 
         /// <summary>
         /// btnIniciarSesion control.

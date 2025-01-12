@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Premios.aspx.cs" Inherits="TPWeb_equipo_i.Premios" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>PREMIOS</h1>
@@ -20,8 +19,6 @@
                                     <h5 class="card-title"><%# Eval("Nombre") %></h5>
                                     <!--Accede a la propiedad Nombre y lo muestra-->
                                     <p class="card-text"><%# Eval("Descripcion") %></p>
-                                    <asp:Button Text="Elegir" CssClass="btn btn-success" runat="server" ID="btnElegir" CommandName="IdArticulo" CommandArgument='<%# Eval("Id") %>' />
-                                    <!--Falta la accion del boton-->
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -34,8 +31,10 @@
                                         <!--En este contexto la lista que manejamos, es la lista de imagenes que viene cargado en c/producto-->
                                         <asp:Repeater runat="server" ID="repImagenes" DataSource='<%# Eval("Imagenes") %>'>
                                             <ItemTemplate>
-                                                <div class="carousel-item <%# Container.ItemIndex == 0 ? "active" : "" %>">
-                                                    <img src='<%# Eval("Url") %>' class="d-block w-100" alt="">
+                                                <div class="carousel-item <%# Container.ItemIndex == 0 ? "active" : "" %> w-150 mt-3 pe-2">
+                                                    <div class="d-block w-150 d-flex justify-content-center align-items-center pb-3" style="height: 150px; overflow: hidden;">
+                                                        <img src='<%# Eval("Url") %>' class="d-block w-150 h-100 object-fit-cover" alt="" />
+                                                    </div>
                                                 </div>
                                             </ItemTemplate>
                                         </asp:Repeater>
@@ -52,6 +51,11 @@
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
+                            
+                            </div>
+                            <div class="d-flex justify-content-end pb-3 pe-4">
+                                <asp:Button Text="Elegir" CssClass="btn btn-success pb-2 w-40" runat="server" ID="btnElegir" CommandName="IdArticulo" CommandArgument='<%# Eval("Id") %>' />
+
                             </div>
                         </div>
                     </div>

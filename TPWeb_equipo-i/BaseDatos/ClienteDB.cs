@@ -27,7 +27,7 @@ namespace BaseDatos
                     cliente.Email = (string)db.Reader["Email"];
                     cliente.Direccion = (string)db.Reader["Direccion"];
                     cliente.Ciudad = (string)db.Reader["Ciudad"];
-                    cliente.CP = (string)db.Reader["CP"];
+                    cliente.CP = (int)db.Reader["CP"];
                     listaClientes.Add(cliente);
                 }
                 return listaClientes;

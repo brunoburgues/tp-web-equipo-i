@@ -20,17 +20,30 @@ namespace TPWeb_equipo_i
             ListaArticulo = accesodedatos.ListarArticulosSP();
 
             if (!IsPostBack)
-                {
+            {
                 repRepetidor.DataSource = ListaArticulo;
                 repRepetidor.DataBind();
-
-
             }
+
+            if (Request.Url.AbsolutePath == "Premios.aspx")
+            {
+                // Recorremos cada item del repeater y ocultamos el botón en cada caso. Sino no lo encuentra
+                foreach (RepeaterItem item in repRepetidor.Items)
+                {
+                    Button btnElegir = (Button)item.FindControl("btnElegir");
+                    if (btnElegir != null)
+                    {
+                        btnElegir.Visible = false;
+                    }
+                }
+            }
+
 
         }
 
         protected void repRepetidor_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+
             if (e.CommandName == "IdArticulo")
             {
                 int idArticulo = Convert.ToInt32(e.CommandArgument);
