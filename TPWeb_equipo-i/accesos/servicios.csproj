@@ -7,4 +7,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BaseDatos\BaseDatos.csproj" />
+    <ProjectReference Include="..\Dominio\dominio.csproj" />
+  </ItemGroup>
+
 </Project>

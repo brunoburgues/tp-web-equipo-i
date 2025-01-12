@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "Dominio\dominio.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatos", "BaseDatos\BaseDatos.csproj", "{D7C11BE6-1E47-4C37-B0CC-3EBA77731EC7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "script", "script", "{9C4D2D46-497E-4A1D-84BC-0702CB60B96A}"
+	ProjectSection(SolutionItems) = preProject
+		..\script PROMO_DB.sql = ..\script PROMO_DB.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

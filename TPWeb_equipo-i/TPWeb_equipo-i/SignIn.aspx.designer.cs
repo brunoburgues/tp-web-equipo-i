@@ -1,10 +1,10 @@
-Ôªø//------------------------------------------------------------------------------
-// <generado autom√°ticamente>
-//     Este c√≥digo fue generado por una herramienta.
+//------------------------------------------------------------------------------
+// <generado autom·ticamente>
+//     Este cÛdigo fue generado por una herramienta.
 //
-//     Los cambios en este archivo podr√≠an causar un comportamiento incorrecto y se perder√°n si
-//     se vuelve a generar el c√≥digo. 
-// </generado autom√°ticamente>
+//     Los cambios en este archivo podrÌan causar un comportamiento incorrecto y se perder·n si
+//     se vuelve a generar el cÛdigo. 
+// </generado autom·ticamente>
 //------------------------------------------------------------------------------
 
 namespace TPWeb_equipo_i
@@ -15,29 +15,38 @@ namespace TPWeb_equipo_i
     {
 
         /// <summary>
-        /// Control txtEmail.
+        /// Control lblPrueba.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.Label lblPrueba;
 
         /// <summary>
         /// Control txtDNI.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDNI;
+
+        /// <summary>
+        /// Control txtEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
         /// Control txtNombre.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
@@ -45,8 +54,8 @@ namespace TPWeb_equipo_i
         /// Control txtApellido.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtApellido;
 
@@ -54,8 +63,8 @@ namespace TPWeb_equipo_i
         /// Control txtDireccion.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDireccion;
 
@@ -63,8 +72,8 @@ namespace TPWeb_equipo_i
         /// Control txtCiudad.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCiudad;
 
@@ -72,8 +81,8 @@ namespace TPWeb_equipo_i
         /// Control txtCp.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCp;
 
@@ -81,9 +90,18 @@ namespace TPWeb_equipo_i
         /// Control btnRegistrar.
         /// </summary>
         /// <remarks>
-        /// Campo generado autom√°ticamente.
-        /// Para modificarlo, mueva la declaraci√≥n del campo del archivo del dise√±ador al archivo de c√≥digo subyacente.
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnRegistrar;
+
+        /// <summary>
+        /// Control linkLogIn.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado autom·ticamente.
+        /// Para modificarlo, mueva la declaraciÛn del campo del archivo del diseÒador al archivo de cÛdigo subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkLogIn;
     }
 }

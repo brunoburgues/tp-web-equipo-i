@@ -71,8 +71,8 @@ namespace BaseDatos
             AccesoBaseDatos db = new AccesoBaseDatos();
             try
             {
-                //db.SetConsulta("Select A.Id, A.Codigo, Nombre, A.Descripcion, IdMarca, M.Descripcion Marca, IdCategoria, C.Descripcion Categoria, Precio from ARTICULOS A left join MARCAS M on A.IdMarca = M.Id left join CATEGORIAS C on A.IdCategoria = C.Id ");
-                db.setearprocedimiento("storedListar");
+                db.SetConsulta("Select A.Id, A.Codigo, Nombre, A.Descripcion, IdMarca, M.Descripcion Marca, IdCategoria, C.Descripcion Categoria, Precio from ARTICULOS A left join MARCAS M on A.IdMarca = M.Id left join CATEGORIAS C on A.IdCategoria = C.Id ");
+                //db.setearprocedimiento("storedListar");
                 db.Lectura();
                 while (db.Reader.Read())
                 {
