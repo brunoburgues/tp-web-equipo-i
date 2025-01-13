@@ -1,4 +1,4 @@
-﻿using BaseDatos;
+using BaseDatos;
 using Dominio;
 using System;
 using System.Collections.Generic;

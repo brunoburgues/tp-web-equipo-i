@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="TPWeb_equipo_i.SignIn" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SignIn.aspx.cs" Inherits="TPWeb_equipo_i.SignIn" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -40,9 +40,31 @@
             <asp:TextBox runat="server" CssClass="form-control" ID="txtCp" />
         </div>
         <div class="col-12">
-            <asp:Button Text="Participar!" CssClass="btn btn-success mb-3" ID="btnRegistrar" OnClick="btnRegistrar_Click" runat="server" />
+            <asp:Button Text="Participar!" CssClass="btn btn-success mb-3" ID="btnRegistrar" OnClick="btnRegistrar_Click" runat="server" Width="122px" />
         </div>
-        <p class="form-text text-center">Si ya tienes una cuenta ingresa <asp:HyperLink runat="server" Text="aquí" ID="linkLogIn"/>.</p>
+
+        <p class="form-text text-center">Si ya tienes una cuenta ingresa
+            <asp:HyperLink runat="server" Text="aquí" ID="linkLogIn" />.</p>
+    </div>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡EXITO!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>¡Ha participado exitosamente!</h1>
+<h2>Se le ha enviado una confirmación al email correspondiente.</h2>
+<h3>¡Aumente sus chanches de ganar!</h3>
+<h3>Siga participando con la compra de más artículos.</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
     <br />
 </asp:Content>

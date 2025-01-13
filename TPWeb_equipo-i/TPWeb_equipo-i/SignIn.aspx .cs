@@ -6,17 +6,16 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BaseDatos;
 using Dominio;
-//using servicios;
 
 namespace TPWeb_equipo_i
 {
     public partial class SignIn : System.Web.UI.Page
     {
-        private Cliente Documento = null;
+       
 
         protected void Page_Load(object sender, EventArgs e)
-        {Cliente Cliente = new Cliente();
-            if (!IsPostBack)
+        {
+            if(!IsPostBack)
                 txtDNI.Text= "Empiece por AQUI";
 
             string codigo = Request.QueryString["vou"].ToString();
@@ -30,20 +29,8 @@ namespace TPWeb_equipo_i
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
-
         {
-            /*
 
-            envioEmail emailService = new envioEmail();
-            emailService.armarCorreo(txtEmail.Text,"","");
-            try
-            {
-                emailService.enviarEmail();
-            }
-            catch (Exception ex)
-            {
-                Session.Add("error", ex);
-            }*/
         }
 
         protected void txtDNI_TextChanged(object sender, EventArgs e)
