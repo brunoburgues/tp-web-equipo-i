@@ -65,13 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="exito.aspx" />
     <Content Include="home.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="Premios.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="Vouchers.aspx" />
     <Content Include="Web.config" />
-    <Content Include="exito.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -80,6 +80,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exito.aspx.cs">
+      <DependentUpon>exito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exito.aspx.designer.cs">
+      <DependentUpon>exito.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
@@ -123,13 +130,6 @@
     </Compile>
     <Compile Include="Vouchers.aspx.designer.cs">
       <DependentUpon>Vouchers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="exito.aspx.cs">
-      <DependentUpon>exito.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="exito.aspx.designer.cs">
-      <DependentUpon>exito.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

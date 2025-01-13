@@ -49,7 +49,7 @@ namespace TPWeb_equipo_i
                 int idArticulo = Convert.ToInt32(e.CommandArgument);
                 string cod = Request.QueryString["vou"].ToString();
 
-                Response.Redirect("LogIn.aspx?vou=" + cod + "&id=" + idArticulo, false);
+                Response.Redirect("SignIn.aspx?vou=" + cod + "&id=" + idArticulo, false);
             }
         }
     }
