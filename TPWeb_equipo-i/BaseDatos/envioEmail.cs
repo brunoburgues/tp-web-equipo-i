@@ -18,10 +18,10 @@ namespace servicios
         public envioEmail()
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("rogerbrunoprueba@outlook.com.ar", "3456afjkl");
+            server.Credentials = new NetworkCredential("rogerbrunoprueba@gmail.com.ar", "dtdj styv ueav qbnk");
             server.EnableSsl = true;
             server.Port = 587;
-            server.Host = "smtp-mail.outlook.com";
+            server.Host = "smtp-mail.gmail.com";
         }
         public void armarCorreo (string emailDestino, string asunto,string cuerpo)
         {
