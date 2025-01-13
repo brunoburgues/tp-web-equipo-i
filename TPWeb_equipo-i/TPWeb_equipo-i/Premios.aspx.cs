@@ -24,8 +24,8 @@ namespace TPWeb_equipo_i
                 repRepetidor.DataSource = ListaArticulo;
                 repRepetidor.DataBind();
             }
-
-            if (Request.Url.AbsolutePath == "Premios.aspx")
+            
+            if (!Request.RawUrl.Contains("?"))
             {
                 // Recorremos cada item del repeater y ocultamos el botón en cada caso. Sino no lo encuentra
                 foreach (RepeaterItem item in repRepetidor.Items)
